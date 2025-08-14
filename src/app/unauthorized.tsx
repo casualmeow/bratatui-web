@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from 'next/link';
 
 export function UnauthorizedPage() {
   return (
@@ -9,9 +10,9 @@ export function UnauthorizedPage() {
         permissions.
       </p>
       <div className="flex flex-row">
-        <a href="/" className="mt-6 text-blue-500 hover:underline">
+        <Link href="/" className="mt-6 text-blue-500 hover:underline">
           Go back to home
-        </a>
+        </Link>
         <a href="/login" className="ml-4 mt-6 text-blue-500 hover:underline">
           Login
         </a>
