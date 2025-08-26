@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Logo from "assets/logo.svg";
 
 export function LogoSection() {

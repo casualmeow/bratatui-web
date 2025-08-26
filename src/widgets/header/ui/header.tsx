@@ -1,5 +1,3 @@
-import { GlassSurface } from "@/shared/ui/GlassSurface";
-import Image from "next/image";
 import { HeaderLayout } from "@/shared/layouts";
 import { LogoSection } from "./logoSection";
 import { SearchPanel } from "./searchPanel";
