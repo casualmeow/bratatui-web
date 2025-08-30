@@ -4,11 +4,11 @@ import { SearchPanel } from "./searchPanel";
 
 const headerItems = [
   {
-    label: "Home",
-    href: "/",
+    label: "Install",
+    href: "/installation",
   },
   {
-    label: "About",
+    label: "Support Us",
     href: "/about",
   },
   {
@@ -30,7 +30,7 @@ export const Header = () => {
               </a>
             ))}
           </nav>
-          <SearchPanel />
+          {/* <SearchPanel /> */}
         </div>
       </header>
     </HeaderLayout>
