@@ -1,6 +1,5 @@
 import * as React from "react";
-import Link from 'next/link';
-
+import Link from "next/link";
 export function UnauthorizedPage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">

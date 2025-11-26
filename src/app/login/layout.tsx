@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
+import { type Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../../../src/app/globals.css";
 import { AdminHeader } from "@/widgets/adminHeader";
 
 const geistSans = Geist({
@@ -14,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bratatui - Kanban",
-  description: "Kanban for admin dashboard",
+  title: "Bratatui - Login",
+  description: "Bratatui Admin Login page",
 };
 
 export default function RootLayout({
@@ -27,10 +26,8 @@ export default function RootLayout({
     <div
       className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background`}
     >
-      <div className="flex container mx-auto p-20.5 justify-center flex-col">
-        <AdminHeader />
-        {children}
-      </div>
+      <AdminHeader />
+      {children}
     </div>
   );
 }
