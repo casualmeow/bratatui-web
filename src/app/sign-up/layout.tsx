@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bratatui - Login",
-  description: "Bratatui Admin Login page",
+  title: "Bratatui - Sign Up",
+  description: "Bratatui Admin Sign Up page",
 };
 
 export default function RootLayout({

@@ -1,0 +1,36 @@
+// import { NextRequest, NextResponse } from "next/server";
+// import { headers } from "next/headers";
+// import { auth } from "@/shared/lib/utils";
+
+// export async function proxy(request: NextRequest) {
+//   const session = await auth.api.getSession({
+//     headers: await headers(),
+//   });
+
+//   // THIS IS NOT SECURE!
+//   // This is the recommended approach to optimistically redirect users
+//   // We recommend handling auth checks in each page/route
+//   if (!session) {
+//     return NextResponse.redirect(new URL("/unauthorized", request.url));
+//   }
+
+//   return NextResponse.next();
+// }
+
+// export const config = {
+//   runtime: "nodejs", // Required for auth.api calls
+//   matcher: ["/login"], // Specify the routes the middleware applies to
+// };
+//
+import { NextRequest, NextResponse } from "next/server";
+export async function proxy(request: NextRequest) {
+  const isLoggedIn = false; // fake test
+  if (!isLoggedIn) {
+    return NextResponse.redirect(new URL("/sign-in", request.url));
+  }
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: ["/dashboard"], // test your behavior there
+};

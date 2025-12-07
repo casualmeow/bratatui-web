@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/shared/ui";
-
+import { unauthorized } from "next/navigation";
 export default function LoginPage() {
   const handleLogin = () => {
     console.log("test");
@@ -22,6 +22,9 @@ export default function LoginPage() {
             placeholder="Password"
             className="input input-bordered w-full max-w-xs"
           />
+          <div>
+            Don`t have password? <a href="/sign-up">Sign up</a>
+          </div>
           <Button
             type="button"
             variant="secondary"

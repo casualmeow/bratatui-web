@@ -12,7 +12,7 @@ type HeaderLink = {
 const headerLinks: HeaderLink[] = [
   { href: "/kanban", label: "Kanban" },
   { href: "/users", label: "Users" },
-  { href: "/login", label: "Login" },
+  { href: "/sign-in", label: "Sign In" },
 ];
 
 export function AdminHeader() {
@@ -35,4 +35,3 @@ export function AdminHeader() {
     </HeaderLayout>
   );
 }
-
